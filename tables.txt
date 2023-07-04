@@ -1,7 +1,8 @@
 Below are the tables and their schemas required for the application..
 1. Table Name : Users
    Fields:
-	user_id (Primary Key)
+	user_id (Primary Key)      
+
 	username
 	email
 	phone_number
