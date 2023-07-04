@@ -1,0 +1,91 @@
+Below are the tables and their schemas required for the application..
+1. Table Name : Users
+   Fields:
+	user_id (Primary Key)
+	username
+	email
+	phone_number
+	date_of_birth
+CREATE TABLE User (
+  user_id INT PRIMARY KEY AUTO_INCREMENT,
+  username VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  phone_number VARCHAR(20) NOT NULL,
+  date_of_birth DATE NOT NULL
+);
+	
+2. Tavle Name : Movie
+   Fields:
+	movie_id (Primary Key)
+	title
+	genre
+	director
+	release_date
+CREATE TABLE Movie (
+  movie_id INT PRIMARY KEY AUTO_INCREMENT,
+  title VARCHAR(255) NOT NULL,
+  genre VARCHAR(255) NOT NULL,
+  director VARCHAR(255) NOT NULL,
+  release_date DATE NOT NULL
+);
+
+3. Table Name : Theater
+   Fields:
+	theater_id (Primary Key)
+	name
+	address
+	city
+	state
+	capacity
+CREATE TABLE Theater (
+  theater_id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL,
+  address VARCHAR(255) NOT NULL,
+  city VARCHAR(255) NOT NULL,
+  state VARCHAR(255) NOT NULL,
+  capacity INT NOT NULL
+);
+4. Table Name : Showtime:
+
+	showtime_id (Primary Key)
+	movie_id (Foreign Key referencing Movie table)
+	theater_id (Foreign Key referencing Theater table)
+	start_time
+	end_time
+CREATE TABLE Showtime (
+  showtime_id INT PRIMARY KEY AUTO_INCREMENT,
+  movie_id INT NOT NULL,
+  theater_id INT NOT NULL,
+  start_time DATETIME NOT NULL,
+  end_time DATETIME NOT NULL,
+  FOREIGN KEY (movie_id) REFERENCES Movie(movie_id),
+  FOREIGN KEY (theater_id) REFERENCES Theater(theater_id)
+);
+
+5. Table : Booking:
+
+	booking_id (Primary Key)
+	user_id (Foreign Key referencing User table)
+	showtime_id (Foreign Key referencing Showtime table)
+	num_tickets
+CREATE TABLE Booking (
+  booking_id INT PRIMARY KEY AUTO_INCREMENT,
+  user_id INT NOT NULL,
+  showtime_id INT NOT NULL,
+  num_tickets INT NOT NULL,
+  FOREIGN KEY (user_id) REFERENCES User(user_id),
+  FOREIGN KEY (showtime_id) REFERENCES Showtime(showtime_id)
+);
+
+6. Table : Ticket
+
+	ticket_id (Primary Key)
+	booking_id (Foreign Key referencing Booking table)
+	seat_number
+CREATE TABLE Ticket (
+  ticket_id INT PRIMARY KEY AUTO_INCREMENT,
+  booking_id INT NOT NULL,
+  seat_number VARCHAR(10) NOT NULL,
+  FOREIGN KEY (booking_id) REFERENCES Booking(booking_id)
+);
