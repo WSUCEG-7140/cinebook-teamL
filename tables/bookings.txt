@@ -1,0 +1,14 @@
+Table : Booking:
+
+	booking_id (Primary Key)
+	user_id (Foreign Key referencing User table)
+	showtime_id (Foreign Key referencing Showtime table)
+	num_tickets
+CREATE TABLE Booking (
+  booking_id INT PRIMARY KEY AUTO_INCREMENT,
+  user_id INT NOT NULL,
+  showtime_id INT NOT NULL,
+  num_tickets INT NOT NULL,
+  FOREIGN KEY (user_id) REFERENCES User(user_id),
+  FOREIGN KEY (showtime_id) REFERENCES Showtime(showtime_id)
+);
