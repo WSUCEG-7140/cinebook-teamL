@@ -1,0 +1,11 @@
+Table : Ticket
+
+	ticket_id (Primary Key)
+	booking_id (Foreign Key referencing Booking table)
+	seat_number
+CREATE TABLE Ticket (
+  ticket_id INT PRIMARY KEY AUTO_INCREMENT,
+  booking_id INT NOT NULL,
+  seat_number VARCHAR(10) NOT NULL,
+  FOREIGN KEY (booking_id) REFERENCES Booking(booking_id)
+);
