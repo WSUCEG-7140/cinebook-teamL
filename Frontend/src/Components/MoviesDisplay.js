@@ -20,6 +20,7 @@ export default function MoviesDisplay() {
     useEffect(() => {
         fetchData()
       }, [])
+
     const handleSeeMore=(e)=>{
         if(e.target.id=="trending){
            const response=await fetch('http://localhost:8080/movies/getByStatus?status=TRENDING');
@@ -30,6 +31,13 @@ export default function MoviesDisplay() {
                 const json2=await response2.json();
                 setComingMovieData(json2)
         }     
+    const handleSeeMore=()=>{
+        const response=await fetch('http://localhost:8080/movies/getByStatus?status=TRENDING');
+        const json=await response.json();
+        setTendingMovieData(json)
+        const response2=await fetch('http://localhost:8080/movies/getByStatus?status=COMMING_SOON');
+        const json2=await response2.json();
+        setComingMovieData(json2)
     }
     return (
         <div>
@@ -40,7 +48,9 @@ export default function MoviesDisplay() {
                 {trendingMoviesData.map((d) => (
                     <Card data={d} />
                 ))}
+
                 <p className="h4style" id="trending" onClick={handleSeeMore}>See More</p>
+                <p className="h4style" onClick={handleSeeMore}>See More</p>
             </div>
             <div class="MovieDisplayHeaderContainer">
                 <h1>Coming Soon</h1>
