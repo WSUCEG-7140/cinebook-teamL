@@ -34,4 +34,8 @@ public class MovieApis {
     public Movies addMovie(@RequestBody Movies movie){
         return movieService.addMovie(movie);
     }
+    @PostMapping("/updateMovie")
+    public Movies updateMovie(@RequestBody Movies movie){
+        return movieService.updateMovie(movie);
+    }
 }
