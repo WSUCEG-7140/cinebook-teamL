@@ -1,0 +1,218 @@
+[
+   {
+      "title":"Guardians of the Galaxy Volume 3",
+      "posterUrl":"https://img.hdtoday.tv/xxrz/250x400/394/91/67/91670229ac9f3b6fb4d242d6b5511644/91670229ac9f3b6fb4d242d6b5511644.jpg",
+      "year":"2023",
+      "duration":"150m",
+      "theater":"Cedar Lee Cinema",
+      "movieId":0,
+      "status":"TREANDING"
+   },
+   {
+      "title":"Indiana Jones and the Dial of Destiny",
+      "posterUrl":"https://img.hdtoday.tv/xxrz/250x400/394/08/2f/082f965e49698aa881adb68a83add432/082f965e49698aa881adb68a83add432.jpg",
+      "year":"2023",
+      "duration":"154m",
+      "theater":"The Neon",
+      "movieId":1,
+      "status":"TREANDING"
+   },
+   {
+      "title":"Nimona",
+      "posterUrl":"https://img.hdtoday.tv/xxrz/250x400/394/53/e5/53e57ce273d6a2c61848bd5212abea54/53e57ce273d6a2c61848bd5212abea54.jpg",
+      "year":"2023",
+      "duration":"99m",
+      "theater":"Marcus Crosswoods Cinema",
+      "movieId":2,
+      "status":"TREANDING"
+   },
+   {
+      "title":"Suzume",
+      "posterUrl":"https://img.hdtoday.tv/xxrz/250x400/394/65/66/6566fe5a98cc4cd603accc2b2cdb6d10/6566fe5a98cc4cd603accc2b2cdb6d10.jpg",
+      "year":"2022",
+      "duration":"123m",
+      "theater":"AMC Dublin Village 18",
+      "movieId":3,
+      "status":"TREANDING"
+   },
+   {
+      "title":"Fast X",
+      "posterUrl":"https://img.hdtoday.tv/xxrz/250x400/394/a9/9b/a99ba7cd6b251e75c6723da994bc02b4/a99ba7cd6b251e75c6723da994bc02b4.jpg",
+      "year":"2023",
+      "duration":"142m",
+      "theater":"Little Art Theatre",
+      "movieId":4,
+      "status":"TREANDING"
+   },
+   {
+      "title":"Spider-Man: Across the Spider-Verse",
+      "posterUrl":"https://img.hdtoday.tv/xxrz/250x400/394/67/7f/677f8af5b3641ba09964277253a36761/677f8af5b3641ba09964277253a36761.jpg",
+      "year":"2023",
+      "duration":"135m",
+      "theater":"Cedar Lee Cinema",
+      "movieId":5,
+      "status":"TREANDING"
+   },
+   {
+      "title":"Knights of the Zodiac",
+      "posterUrl":"https://img.hdtoday.tv/xxrz/250x400/394/55/20/552080e2fea0c47fb4accfc959d5836a/552080e2fea0c47fb4accfc959d5836a.jpg",
+      "year":"2023",
+      "duration":"112m",
+      "theater":"The Neon",
+      "movieId":6,
+      "status":"TREANDING"
+   },
+   {
+      "title":"The Super Mario Bros. Movie",
+      "posterUrl":"https://img.hdtoday.tv/xxrz/250x400/394/f7/69/f769d69be489f65e8cb1748693fce35e/f769d69be489f65e8cb1748693fce35e.jpg",
+      "year":"2023",
+      "duration":"92m",
+      "theater":"Marcus Crosswoods Cinema",
+      "movieId":7,
+      "status":"TREANDING"
+   },
+   {
+      "title":"Elemental",
+      "posterUrl":"https://img.hdtoday.tv/xxrz/250x400/394/75/69/7569a75e6c56bae74fc3ce3d1427606f/7569a75e6c56bae74fc3ce3d1427606f.jpg",
+      "year":"2023",
+      "duration":"102m",
+      "theater":"AMC Dublin Village 18",
+      "movieId":8,
+      "status":"TREANDING"
+   },
+   {
+      "title":"John Wick: Chapter 4",
+      "posterUrl":"https://img.hdtoday.tv/xxrz/250x400/394/1e/9e/1e9efbf118acd1e7661d144868dc5ef5/1e9efbf118acd1e7661d144868dc5ef5.jpg",
+      "year":"2023",
+      "duration":"120m",
+      "theater":"Little Art Theatre",
+      "movieId":9,
+      "status":"TREANDING"
+   },
+   {
+      "title":"Avatar: The Way of Water",
+      "posterUrl":"https://img.hdtoday.tv/xxrz/250x400/394/1e/c6/1ec694a9d587d509ec7a9be815aacfac/1ec694a9d587d509ec7a9be815aacfac.jpg",
+      "year":"2022",
+      "duration":"192m",
+      "theater":"Cedar Lee Cinema",
+      "movieId":10,
+      "status":"TREANDING"
+   },
+   {
+      "title":"The Flash",
+      "posterUrl":"https://img.hdtoday.tv/xxrz/250x400/394/f7/97/f7975e92348f8055ee359ea5218d1aa5/f7975e92348f8055ee359ea5218d1aa5.jpg",
+      "year":"2023",
+      "duration":"144m",
+      "theater":"The Neon",
+      "movieId":11,
+      "status":"TREANDING"
+   },
+   {
+      "title":"Extraction 2",
+      "posterUrl":"https://img.hdtoday.tv/xxrz/250x400/394/9c/d5/9cd56c00c2b79598f7fba8ba33b2128d/9cd56c00c2b79598f7fba8ba33b2128d.jpg",
+      "year":"2023",
+      "duration":"123m",
+      "theater":"Marcus Crosswoods Cinema",
+      "movieId":12,
+      "status":"TREANDING"
+   },
+   {
+      "title":"Mavka: The Forest Song",
+      "posterUrl":"https://img.hdtoday.tv/xxrz/250x400/394/97/6a/976afa279423d8f7c7b37302f4cabc27/976afa279423d8f7c7b37302f4cabc27.jpg",
+      "year":"2023",
+      "duration":"99m",
+      "theater":"AMC Dublin Village 18",
+      "movieId":13,
+      "status":"TREANDING"
+   },
+   {
+      "title":"Sisu",
+      "posterUrl":"https://img.hdtoday.tv/xxrz/250x400/394/05/32/0532d0cfab23eb90cd77c0fd5168d5d2/0532d0cfab23eb90cd77c0fd5168d5d2.jpg",
+      "year":"2023",
+      "duration":"91m",
+      "theater":"Little Art Theatre",
+      "movieId":14,
+      "status":"TREANDING"
+   },
+   {
+      "title":"No Hard Feelings",
+      "posterUrl":"https://img.hdtoday.tv/xxrz/250x400/394/35/c5/35c5153ece8c43f7d12075a23429648c/35c5153ece8c43f7d12075a23429648c.jpg",
+      "year":"2023",
+      "duration":"103m",
+      "theater":"Cedar Lee Cinema",
+      "movieId":15,
+      "status":"TREANDING"
+   },
+   {
+      "title":"Unknown: The Lost Pyramid",
+      "posterUrl":"https://img.hdtoday.tv/xxrz/250x400/394/bc/4f/bc4f324361538ac1e36ef6030402d2fb/bc4f324361538ac1e36ef6030402d2fb.jpg",
+      "year":"2023",
+      "duration":"83m",
+      "theater":"The Neon",
+      "movieId":16,
+      "status":"TREANDING"
+   },
+   {
+      "title":"Wham!",
+      "posterUrl":"https://img.hdtoday.tv/xxrz/250x400/394/5f/f0/5ff0223422dfd58323c3199bc78ff939/5ff0223422dfd58323c3199bc78ff939.jpg",
+      "year":"2023",
+      "duration":"92m",
+      "theater":"Marcus Crosswoods Cinema",
+      "movieId":17,
+      "status":"TREANDING"
+   },
+   {
+      "title":"My Fault",
+      "posterUrl":"https://img.hdtoday.tv/xxrz/250x400/394/ce/9f/ce9f2225293f77bcda0a5de48a349b61/ce9f2225293f77bcda0a5de48a349b61.jpg",
+      "year":"2023",
+      "duration":"117m",
+      "theater":"AMC Dublin Village 18",
+      "movieId":18,
+      "status":"TREANDING"
+   },
+   {
+      "title":"Transformers: Rise of the Beasts",
+      "posterUrl":"https://img.hdtoday.tv/xxrz/250x400/394/35/34/3534b9bf9505c28893f0204d0f77a00a/3534b9bf9505c28893f0204d0f77a00a.jpg",
+      "year":"2023",
+      "duration":"120m",
+      "theater":"Little Art Theatre",
+      "movieId":19,
+      "status":"TREANDING"
+   },
+   {
+      "title":"Little Bone Lodge",
+      "posterUrl":"https://img.hdtoday.tv/xxrz/250x400/394/f3/31/f3319cd932e9e67e168d307edb8c8719/f3319cd932e9e67e168d307edb8c8719.jpg",
+      "year":"2023",
+      "duration":"93m",
+      "theater":"Cedar Lee Cinema",
+      "movieId":20,
+      "status":"TREANDING"
+   },
+   {
+      "title":"Confidential Informant",
+      "posterUrl":"https://img.hdtoday.tv/xxrz/250x400/394/fe/64/fe6434ed5fc9d2d6842d1a792d310c62/fe6434ed5fc9d2d6842d1a792d310c62.jpg",
+      "year":"2023",
+      "duration":"88m",
+      "theater":"The Neon",
+      "movieId":21,
+      "status":"TREANDING"
+   },
+   {
+      "title":"Beau Is Afraid",
+      "posterUrl":"https://img.hdtoday.tv/xxrz/250x400/394/2f/7a/2f7a88ffde20eda5db657950197b5802/2f7a88ffde20eda5db657950197b5802.jpg",
+      "year":"2023",
+      "duration":"179m",
+      "theater":"Marcus Crosswoods Cinema",
+      "movieId":22,
+      "status":"TREANDING"
+   },
+   {
+      "title":"Titanic",
+      "posterUrl":"https://img.hdtoday.tv/xxrz/250x400/394/e1/8b/e18b9813113e8f26bc655864702a9085/e18b9813113e8f26bc655864702a9085.jpg",
+      "year":"1997",
+      "duration":"194m",
+      "theater":"AMC Dublin Village 18",
+      "movieId":23,
+      "status":"TREANDING"
+   }
+]
