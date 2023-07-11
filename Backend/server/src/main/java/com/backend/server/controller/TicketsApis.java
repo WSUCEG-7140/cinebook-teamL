@@ -1,7 +1,7 @@
 package com.backend.server.controller;
 
-import com.backend.server.Model.Movies;
-import com.backend.server.service.MovieService;
+import com.backend.server.Model.tickets;
+import com.backend.server.service.ticketService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
@@ -9,29 +9,33 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/movies")
+@RequestMapping("/tickets")
 @CrossOrigin(origins = "http://localhost:3000")
 public class TicketsApis {
 
     @Autowired
-    MovieService movieService;
+    ticketService ticketService;
 
-    @GetMapping(value = "/getAllMovies",produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<Movies> getAllMovies(){
+    @GetMapping(value = "/getAlltickets",produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<tickets> getAlltickets(){
 
-        return movieService.getAllMovies();
+        return ticketService.getAlltickets();
     }
 
     @GetMapping(value="/getByStatus") //TRENDING
-    public List<Movies> getByStatus(@RequestParam String status){
-        return movieService.findByStatus(status);
+    public List<tickets> getByStatus(@RequestParam String status){
+        return ticketService.findByStatus(status);
     }
-    @PostMapping("/addAllMovies")
-    public void saveAllMovies(@RequestBody List<Movies> movies){
-        movieService.addAllMovies(movies);
+    @PostMapping("/addAlltickets")
+    public void saveAlltickets(@RequestBody List<tickets> tickets){
+        ticketService.addAlltickets(tickets);
     }
-    @PostMapping("/addMovie")
-    public Movies addMovie(@RequestBody Movies movie){
-        return movieService.addMovie(movie);
+    @PostMapping("/addticket")
+    public tickets addticket(@RequestBody tickets ticket){
+        return ticketService.addticket(ticket);
+    }
+    @PostMapping("/cancelTicket")
+    public tickets addticket(@RequestBody tickets ticket){
+        return ticketService.cancelTicket(ticket);
     }
 }
