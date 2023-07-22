@@ -43,4 +43,10 @@ public class MovieServiceImpl implements MovieService{
         System.out.println(movies.size());
         return movies;
     }
+
+    @Override
+    public List<Movies> findByGener(String gener) {
+        List<Movies> movies=movieRepository.findByGener(gener);
+        return movies;
+    }
 }

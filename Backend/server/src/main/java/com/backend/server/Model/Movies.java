@@ -21,4 +21,5 @@ public class Movies {
     private String posterUrl;
     private String theater;
     private String status;
+    private String gener;
 }
