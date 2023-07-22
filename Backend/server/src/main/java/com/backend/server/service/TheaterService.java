@@ -14,4 +14,5 @@ public interface TheaterService {
     String deleteUser(String mobileNumber);
 
 //    Inventory addItemToCart(Inventory inventory);
+    int getAvailableTickets(int theaterId);
 }
