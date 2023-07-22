@@ -11,8 +11,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Document(collection = "movies") //creates the collection in the mongodb 
-public class Movies {
+@Document(collection = "movies")
+public class Theater {
     @Id
     private int movieId;
     private String title;

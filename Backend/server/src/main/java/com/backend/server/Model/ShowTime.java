@@ -11,14 +11,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Document(collection = "movies") //creates the collection in the mongodb 
+@Document(collection = "showtimes")
 public class Movies {
     @Id
-    private int movieId;
-    private String title;
-    private String duration;
-    private String year;
-    private String posterUrl;
-    private String theater;
-    private String status;
+    private int showtime_id;
+    private String start_time;
+    private int theater_id;
+    private String end_time;
 }

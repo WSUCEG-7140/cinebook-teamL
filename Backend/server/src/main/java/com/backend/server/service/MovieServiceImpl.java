@@ -32,6 +32,12 @@ public class MovieServiceImpl implements MovieService{
     }
 
     @Override
+    public Movies updateMovie(Movies movie) {
+        Movies mv=movieRepository.save(movie);
+        return mv;
+    }
+
+    @Override
     public List<Movies> findByStatus(String status) {
         List<Movies> movies=movieRepository.findByStatus(status);
         System.out.println(movies.size());

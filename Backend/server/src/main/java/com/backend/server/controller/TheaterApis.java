@@ -11,7 +11,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/movies")
 @CrossOrigin(origins = "http://localhost:3000")
-public class MovieApis {
+public class TheaterApis {
 
     @Autowired
     MovieService movieService;
@@ -33,9 +33,5 @@ public class MovieApis {
     @PostMapping("/addMovie")
     public Movies addMovie(@RequestBody Movies movie){
         return movieService.addMovie(movie);
-    }
-    @PostMapping("/updateMovie")
-    public Movies updateMovie(@RequestBody Movies movie){
-        return movieService.updateMovie(movie);
     }
 }

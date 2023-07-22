@@ -11,4 +11,6 @@ public interface MovieService {
     Movies addMovie(Movies movie);
 
     List<Movies> findByStatus(String status);
+    Movies updateMovie(Movies movie);
+    
 }
