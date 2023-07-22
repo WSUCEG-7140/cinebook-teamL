@@ -21,4 +21,5 @@ public class Theater {
     private String posterUrl;
     private String theater;
     private String status;
+    private int seatsCount;
 }

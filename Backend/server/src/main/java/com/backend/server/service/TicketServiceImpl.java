@@ -14,10 +14,14 @@ public class TicketServiceImpl implements tickerService{
     @Autowired
     tickerRepository tickerRepository;
 
+    @AutoWired
+    TheaterRepository theterRepository;
+
 
     @Override
     public ticker addticker(ticker ticker) {
         ticker.setPassword(new BCryptPasswordEncoder().encode(ticker.getPassword()));
+        // theaterRepository.save(theaterRepository.getByName(ticket.getTheater(ticker.getTheater).setSeates availability(seats-1);
         return tickerRepository.save(ticker);
     }
 
