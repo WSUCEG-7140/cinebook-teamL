@@ -4,23 +4,11 @@ import AppBarOptionsDescription from './AppBarOptionsDescriptions';
 import Carousel from './Carousel';
 import './../CSS/Screen.css'
 import MoviesDisplay from './MoviesDisplay';
-import Book from './Book';
-import Signup from './Signup';
 
 export default function Screen(){
     const [activeScreen,setActiveScreen]=useState("Home")
-    const [movieBookData,setmovieBookData]=useState("")
-    const [isSinedIn,setIsSignedIn]=useState(false)
-
-    const setDataForBook=(Moviedata)=>{
-        setmovieBookData(Moviedata)
-        setActiveScreen("Book")
-    }
-    const setScreenFunction=(data)=>{
+    const dataFromAppBar=(data)=>{
         setActiveScreen(data)
-    }
-    const setIsSinedInFunction=()=>{
-        setIsSignedIn(!isSinedIn)
     }
     
     const carouselData=[
@@ -30,34 +18,21 @@ export default function Screen(){
     ]
     switch(activeScreen){
         case "Home":
-            console.log(isSinedIn)
-            return(
-                <div className='ScreenContainer' isSinedIn={isSinedIn}>
-                    <AppBar dataFromAppBar={setScreenFunction}/>
-                    <Carousel carouselData={carouselData}/>
-                    <MoviesDisplay dataFromCard={setDataForBook}/>
-                </div>
-            );
-        case "Book":
             return(
                 <div className='ScreenContainer'>
-                    <AppBar dataFromAppBar={setScreenFunction}/>
-                    <Book data={movieBookData} dataFromAppBar={setScreenFunction}/>
+                    <AppBar dataFromAppBar={dataFromAppBar}/>
+                    <Carousel carouselData={carouselData}/>
+                    <MoviesDisplay />
                 </div>
             );
-        case "Signup":
-            return(
-                <div className=''>
-                   <Signup setScreen={setScreenFunction} setSinedIn={setIsSinedInFunction}/>
-                </div>
-            );
+            break;
         default:
             return(
                 <div className='ScreenContainer'>
-                <AppBar dataFromAppBar={setScreenFunction} isSinedIn={isSinedIn}/>
+                <AppBar dataFromAppBar={dataFromAppBar}/>
                 <Carousel carouselData={carouselData}/>
-                <AppBarOptionsDescription activeScreen={activeScreen} dataFromAppBar={setScreenFunction}/>
-                <MoviesDisplay dataFromCard={setDataForBook}/>
+                <AppBarOptionsDescription activeScreen={activeScreen} dataFromAppBar={dataFromAppBar}/>
+                <MoviesDisplay />
                 </div>
             );
     }

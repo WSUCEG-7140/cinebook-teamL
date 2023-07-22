@@ -1,19 +1,17 @@
 package com.backend.server.service;
 
-import com.backend.server.Model.ticket;
+import com.backend.server.Model.User;
 
 import java.util.Optional;
 
 
 public interface TicketService {
-    public ticket addticket(ticket ticket);
-    public Optional<ticket> getticket(String email);
+    public User addUser(User user);
+    public Optional<User> getUser(String email);
 
-    ticket updateticket(ticket ticket);
+    User updateUser(User user);
 
-    String deleteticket(String mobileNumber);
-
-     String cancelTicket(String mobileNumber);
+    String deleteUser(String mobileNumber);
 
 //    Inventory addItemToCart(Inventory inventory);
 }

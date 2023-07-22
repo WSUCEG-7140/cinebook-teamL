@@ -1,7 +1,7 @@
 package com.backend.server.controller;
 
-import com.backend.server.Model.tickets;
-import com.backend.server.service.ticketService;
+import com.backend.server.Model.Movies;
+import com.backend.server.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
@@ -9,33 +9,29 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/tickets")
+@RequestMapping("/movies")
 @CrossOrigin(origins = "http://localhost:3000")
 public class TicketsApis {
 
     @Autowired
-    ticketService ticketService;
+    MovieService movieService;
 
-    @GetMapping(value = "/getAlltickets",produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<tickets> getAlltickets(){
+    @GetMapping(value = "/getAllMovies",produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<Movies> getAllMovies(){
 
-        return ticketService.getAlltickets();
+        return movieService.getAllMovies();
     }
 
     @GetMapping(value="/getByStatus") //TRENDING
-    public List<tickets> getByStatus(@RequestParam String status){
-        return ticketService.findByStatus(status);
+    public List<Movies> getByStatus(@RequestParam String status){
+        return movieService.findByStatus(status);
     }
-    @PostMapping("/addAlltickets")
-    public void saveAlltickets(@RequestBody List<tickets> tickets){
-        ticketService.addAlltickets(tickets);
+    @PostMapping("/addAllMovies")
+    public void saveAllMovies(@RequestBody List<Movies> movies){
+        movieService.addAllMovies(movies);
     }
-    @PostMapping("/addticket")
-    public tickets addticket(@RequestBody tickets ticket){
-        return ticketService.addticket(ticket);
-    }
-    @PostMapping("/cancelTicket")
-    public tickets addticket(@RequestBody tickets ticket){
-        return ticketService.cancelTicket(ticket);
+    @PostMapping("/addMovie")
+    public Movies addMovie(@RequestBody Movies movie){
+        return movieService.addMovie(movie);
     }
 }

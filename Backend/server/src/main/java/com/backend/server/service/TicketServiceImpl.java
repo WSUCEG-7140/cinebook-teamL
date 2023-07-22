@@ -1,7 +1,7 @@
 package com.backend.server.service;
 
-import com.backend.server.Model.ticker;
-import com.backend.server.repository.tickerRepository;
+import com.backend.server.Model.User;
+import com.backend.server.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -9,44 +9,38 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 
 @Service
-public class TicketServiceImpl implements tickerService{
+public class TicketServiceImpl implements UserService{
 
     @Autowired
-    tickerRepository tickerRepository;
+    UserRepository userRepository;
 
 
     @Override
-    public ticker addticker(ticker ticker) {
-        ticker.setPassword(new BCryptPasswordEncoder().encode(ticker.getPassword()));
-        return tickerRepository.save(ticker);
+    public User addUser(User user) {
+        user.setPassword(new BCryptPasswordEncoder().encode(user.getPassword()));
+        return userRepository.save(user);
     }
 
 
     @Override
-    public Optional<ticker> getticker(String mobileNumber) {
-        return(tickerRepository.findById(mobileNumber));
+    public Optional<User> getUser(String mobileNumber) {
+        return(userRepository.findById(mobileNumber));
     }
 
     @Override
-    public ticker updateticker(ticker ticker) {
-        return tickerRepository.save(ticker);
+    public User updateUser(User user) {
+        return userRepository.save(user);
     }
 
     @Override
-    public String deleteticker(String mobileNumber) {
-       tickerRepository.deleteById(mobileNumber);
-        return("tickerDeleted Successfully");
+    public String deleteUser(String mobileNumber) {
+       userRepository.deleteById(mobileNumber);
+        return("UserDeleted Successfully");
     }
 
-    @Override
-    public String cancelTicket(String mobileNumber) {
-       tickerRepository.deleteById(mobileNumber);
-        return("tickerDeleted Successfully");
-    }
-    
 //    @Override
 //    public Inventory addItemToCart(Inventory inventory) {
-//        ticker.getCart().add(inventory);
+//        user.getCart().add(inventory);
 //        return inventory;
 //    }
 
