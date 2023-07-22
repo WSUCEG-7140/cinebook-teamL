@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../CSS/Book.css"
+import AgeRangeSelector from "./AgeRangeSelector.js"
 
 export default function Book(props){
     const [price,setPrice]=useState(1)
@@ -16,6 +17,8 @@ export default function Book(props){
                 <h6>{price}</h6>
                 <button style={{margin:"10px",width:"50px"}} onClick={()=>{price>1?setPrice(price-1):setPrice(1)}}>-</button>
             </div>
+            <label> select the age: </label>
+            <AgeRangeSelector />
             <div>
                 <h3>Total Price : ${17.99*price}</h3>
             </div>
