@@ -37,6 +37,10 @@ public class TheaterServiceImpl implements UserService{
        userRepository.deleteById(mobileNumber);
         return("UserDeleted Successfully");
     }
+    @Override
+    public int getAvailableTickets(int theaterId) {
+        return userRepository.getById(theaterId).getSeatsAvailable();
+    }
 
 //    @Override
 //    public Inventory addItemToCart(Inventory inventory) {
