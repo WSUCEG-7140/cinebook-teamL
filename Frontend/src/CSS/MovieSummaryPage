@@ -1,0 +1,38 @@
+/* MovieSummaryPage.css */
+
+/* Main container */
+.movie-summary-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Movie poster */
+.movie-poster img {
+  width: 200px;
+  height: 300px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Movie details */
+.movie-details {
+  margin-top: 20px;
+}
+
+.movie-details h1 {
+  margin-bottom: 10px;
+}
+
+.movie-details p {
+  margin-bottom: 5px;
+}
+
+/* Movie summary */
+.movie-summary {
+  font-size: 16px;
+  line-height: 1.6;
+}
