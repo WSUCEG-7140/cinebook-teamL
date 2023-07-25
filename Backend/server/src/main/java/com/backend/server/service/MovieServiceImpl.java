@@ -49,4 +49,8 @@ public class MovieServiceImpl implements MovieService{
         List<Movies> movies=movieRepository.findByGener(gener);
         return movies;
     }
+   @Override
+    public void deleteMovie(Movies movie) {
+        movieRepository.deleteById(movie.getMovieId);
+    }
 }

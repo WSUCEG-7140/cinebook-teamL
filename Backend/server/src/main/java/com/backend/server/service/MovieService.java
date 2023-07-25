@@ -13,5 +13,5 @@ public interface MovieService {
     List<Movies> findByStatus(String status);
     Movies updateMovie(Movies movie);
     List<Movies> findByGener(String gener);
-    
+    deleteMovie(Movies movie);
 }
