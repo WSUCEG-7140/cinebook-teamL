@@ -1,3 +1,10 @@
+# Installation
+1.    Clone the repository
+2.    run the backend server
+3.    run the React application
+4.    connet via localhost:3000
+
+
 cinebook-teamL
 Backend
 
