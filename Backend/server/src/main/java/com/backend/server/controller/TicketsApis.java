@@ -16,7 +16,7 @@ public class TicketsApis {
     @Autowired
     ticketService ticketService;
 
-    @GetMapping(value = "/getAlltickets",produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "/getAlltickets",produces = MediaType.APPLICATION_JSON_VALUE) // get all tickets for repoet generatiion
     public List<tickets> getAlltickets(){
 
         return ticketService.getAlltickets();
