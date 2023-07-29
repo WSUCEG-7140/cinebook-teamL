@@ -2,8 +2,9 @@ name: Doxygen Documentation
 
 on:
   push:
-    branches:
-      - main   # Adjust this to match your main branch name
+    branches: [  ]
+  pull_request:
+    branches: []
 
 jobs:
   build:
