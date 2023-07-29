@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Java CI with Maven
+name: Java CI Build Test Automation 
 
 on:
   push:
@@ -34,7 +34,7 @@ jobs:
     - name: Install Doxygen (Ubuntu)
       # Install Doxygen on Ubuntu
       if: matrix.os == 'ubuntu-latest'
-      run: sudo apt-get install -y doxygen
+      run: sudo apt-get update && sudo apt-get install -y doxygen
           
     - name: Install Doxygen (macOS)
       # Install Doxygen on macOS
