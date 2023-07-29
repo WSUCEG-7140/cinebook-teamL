@@ -31,34 +31,7 @@ jobs:
       run: mvn -B package --file TicketServer/pom.xml
       
 
-    - name: Install Doxygen (Ubuntu)
-      # Install Doxygen on Ubuntu
-      if: matrix.os == 'ubuntu-latest'
-      run: sudo apt-get update && sudo apt-get install -y doxygen
-          
-    - name: Install Doxygen (macOS)
-      # Install Doxygen on macOS
-      if: matrix.os == 'macOS-latest'
-      run: |
-        brew install doxygen
-        export HOMEBREW_NO_INSTALL_CLEANUP=1
-        export HOMEBREW_NO_ENV_HINTS=1
-            
-    - name: Install Doxygen (Windows)
-      # Install Doxygen on Windows
-      if: matrix.os == 'windows-latest'
-      run: choco install doxygen.install --yes --no-progress
-     
-    - name: Generate Documentation
-      # Generate the documentation using doxygen
-      run: doxygen Doxyfile
-    
-    - name: Upload Documentation
-      # Upload the documentation as an artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: Documentation
-        path: html/
+   
 
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
