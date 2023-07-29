@@ -1,3 +1,44 @@
+# Team Members
+
+1. Gopi Raju Rajolu (Github Username: gopiraju3)
+2. Swathi Nuthalapati (Github Username: Swathi72001)
+3. Dinesh Gorripati (Github Username: dineshgorripat)
+4. Anil Boyapati (Github Username: AnilBoyapati09)
+5. Sai Kumar Nallapati (Github Username: Nallapati25)
+6. Harika Boppudi (Github Username: harikaboppudi10)
+7. Harish Medapu (Github Username: Harishkumar110411)
+
+
+# Programming By Contract and Literate Programming
+
+We have covered Programming By Contract and Literate Programming in the below files:
+
+https://github.com/WSUCEG-7140/cinebook-teamL/blob/main/design.md (Project Design)
+
+https://github.com/WSUCEG-7140/cinebook-teamL/blob/main/Requirements.md (Linked Issues)
+
+https://github.com/WSUCEG-7140/cinebook-teamL/blob/main/Backend/server/src/main/java/com/backend/server/Model/Movies.java
+
+https://github.com/WSUCEG-7140/cinebook-teamL/blob/main/Backend/server/src/main/java/com/backend/server/configuration/AppSecurityConfig.java
+
+https://github.com/WSUCEG-7140/cinebook-teamL/blob/main/Backend/server/src/main/java/com/backend/server/configuration/SwaggerConfig.java
+
+https://github.com/WSUCEG-7140/cinebook-teamL/blob/main/Backend/server/src/main/java/com/backend/server/controller/TheaterApis.java
+
+https://github.com/WSUCEG-7140/cinebook-teamL/blob/main/Backend/server/src/main/java/com/backend/server/Model/Theater.java
+
+https://github.com/WSUCEG-7140/cinebook-teamL/blob/main/Backend/server/src/main/java/com/backend/server/ServerApplication.java
+
+https://github.com/WSUCEG-7140/cinebook-teamL/blob/main/Backend/server/src/main/java/com/backend/server/repository/DataTheaterRepository.java
+
+https://github.com/WSUCEG-7140/cinebook-teamL/blob/main/Backend/server/src/main/java/com/backend/server/repository/UserRepository.java
+
+https://github.com/WSUCEG-7140/cinebook-teamL/blob/main/Backend/server/src/main/java/com/backend/server/service/CurrentUser.java
+
+
+
+
+
 # Installation
 1.    Clone the repository
 2.    run the backend server
