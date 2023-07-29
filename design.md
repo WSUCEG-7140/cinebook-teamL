@@ -2,12 +2,13 @@
 CineBook is a web application designed to facilitate the booking of movie tickets. It provides a user-friendly interface for users to browse available movies, view movie details, book tickets, make payments, and log out. Additionally, it offers administrative functionality for managing movies.
 
 
-# @section Project Project Overview
+# @section Project Project Overview.
 
 
 # Features:
 
-https://github.com/WSUCEG-7140/cinebook-teamL/tree/main
+https://github.com/WSUCEG-7140/cinebook-teamL/tree/main.
+
 
 # Installation:
 
