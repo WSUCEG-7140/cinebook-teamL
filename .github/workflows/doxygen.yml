@@ -20,12 +20,12 @@ jobs:
     - name: Generate Doxygen Documentation
       run: |
         doxygen Doxyfile
+
     - name: Commit and Push Documentation
-      run: |
-        git config user.name "Your Name"
-        git config user.email "your-email@example.com"
-        git add .
-        git commit -m "Generate Doxygen documentation"
-        git push
+      # Upload the documentation as an artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: Documentation
+        path: html/
 
    
