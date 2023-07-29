@@ -9,7 +9,7 @@
 7. Harish Medapu (Github Username: Harishkumar110411)
 
 
-# Programming By Contract and Literate Programming.md
+# Programming By Contract and Literate Programming
 
 We have covered Programming By Contract and Literate Programming in below files:
 
