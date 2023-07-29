@@ -11,12 +11,29 @@
 
 # Programming By Contract and Literate Programming
 
-We have covered Programming By Contract and Literate Programming in below files:
+We have covered Programming By Contract and Literate Programming in the below files:
 
+https://github.com/WSUCEG-7140/cinebook-teamL/blob/main/design.md (Project Design)
 
+https://github.com/WSUCEG-7140/cinebook-teamL/blob/main/Requirements.md (Linked Issues)
 
+https://github.com/WSUCEG-7140/cinebook-teamL/blob/main/Backend/server/src/main/java/com/backend/server/Model/Movies.java
 
+https://github.com/WSUCEG-7140/cinebook-teamL/blob/main/Backend/server/src/main/java/com/backend/server/configuration/AppSecurityConfig.java
 
+https://github.com/WSUCEG-7140/cinebook-teamL/blob/main/Backend/server/src/main/java/com/backend/server/configuration/SwaggerConfig.java
+
+https://github.com/WSUCEG-7140/cinebook-teamL/blob/main/Backend/server/src/main/java/com/backend/server/controller/TheaterApis.java
+
+https://github.com/WSUCEG-7140/cinebook-teamL/blob/main/Backend/server/src/main/java/com/backend/server/Model/Theater.java
+
+https://github.com/WSUCEG-7140/cinebook-teamL/blob/main/Backend/server/src/main/java/com/backend/server/ServerApplication.java
+
+https://github.com/WSUCEG-7140/cinebook-teamL/blob/main/Backend/server/src/main/java/com/backend/server/repository/DataTheaterRepository.java
+
+https://github.com/WSUCEG-7140/cinebook-teamL/blob/main/Backend/server/src/main/java/com/backend/server/repository/UserRepository.java
+
+https://github.com/WSUCEG-7140/cinebook-teamL/blob/main/Backend/server/src/main/java/com/backend/server/service/CurrentUser.java
 
 
 
