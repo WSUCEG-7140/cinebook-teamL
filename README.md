@@ -1,4 +1,4 @@
-# Team Members.md
+# Team Members
 
 1. Gopi Raju Rajolu (Github Username: gopiraju3)
 2. Swathi Nuthalapati (Github Username: Swathi72001)
