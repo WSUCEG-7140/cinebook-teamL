@@ -49,4 +49,4 @@ Harish Medapu is assigned to work on Issue#28(Make an API to implement a reporti
 
 # Next Meeting Details:
 Next meeting will be on 14 July 2023 on Zoom
-Minutes submitted by: Gopi Raju Rajolu
+Minutes submitted by: Swathi Nuthalapati
